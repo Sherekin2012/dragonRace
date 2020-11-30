@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jQuery Dragon Race</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles2.css">
+
+</head>
+
+<body id="race">
+    <h1>jQuery Dragon Race</h1>
+    <h4>Because cars are boring!</h4>
+
+    <input type="button" value="Race!" id="go">
+    <input type="button" value="Reset" id="reset">
+
+    <div id="racetrack">
+        <img id="dragon1" src="img/dragon1.gif" height="150" width="150" alt="purple dragon" class="dragon">
+
+        <img id="dragon2" src="img/dragon2.gif" height="150" width="150" alt="red dragon" class="dragon">
+    </div>
+
+    <div id="raceInfoContainer" class="clearfix">
+        <h2>Results</h2>
+        <div id="raceInfo1" class="raceInfo">dragon 1<span></span></div>
+        <div id="raceInfo2" class="raceInfo">dragon 2<span></span></div>
+    </div>
+
+    <!-- Load the CDN first -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');
+
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
